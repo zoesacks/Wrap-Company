@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores - Wrap Company ARG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-car me-2"></i>Wrap Company ARG
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="colors.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-3">Paleta de Colores</h1>
+            <p class="lead">Descubre nuestra amplia gama de colores y acabados</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4 bg-dark-secondary">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label for="finishFilter" class="form-label">Acabado</label>
+                    <select class="form-select" id="finishFilter">
+                        <option value="all">Todos los acabados</option>
+                        <option value="mate">Mate</option>
+                        <option value="brillo">Brillo</option>
+                        <option value="satinado">Satinado</option>
+                        <option value="especial">Especial</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="applicationFilter" class="form-label">Aplicación</label>
+                    <select class="form-select" id="applicationFilter">
+                        <option value="all">Todas las aplicaciones</option>
+                        <option value="completo">Vehículo completo</option>
+                        <option value="parcial">Aplicación parcial</option>
+                        <option value="detalles">Detalles</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="colorSearch" class="form-label">Buscar color</label>
+                    <input type="text" class="form-control" id="colorSearch" placeholder="Nombre del color...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colors Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="colorsGrid">
+                <!-- Mate Colors -->
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="mate" data-application="completo" data-name="negro mate">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #1a1a1a, #000000);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Negro Mate</h5>
+                            <p class="mb-2"><span class="badge bg-primary">Mate</span></p>
+                            <p class="small mb-0">Elegancia absoluta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="mate" data-application="completo" data-name="blanco mate">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Blanco Mate</h5>
+                            <p class="mb-2"><span class="badge bg-primary">Mate</span></p>
+                            <p class="small mb-0">Pureza y sofisticación</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="mate" data-application="completo" data-name="gris mate">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #6c757d, #495057);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Gris Mate</h5>
+                            <p class="mb-2"><span class="badge bg-primary">Mate</span></p>
+                            <p class="small mb-0">Modernidad discreta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="mate" data-application="completo" data-name="azul mate">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #0d6efd, #0a58ca);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Azul Mate</h5>
+                            <p class="mb-2"><span class="badge bg-primary">Mate</span></p>
+                            <p class="small mb-0">Deportividad elegante</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brillo Colors -->
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="brillo" data-application="completo" data-name="rojo brillo">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #dc3545, #b02a37);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Rojo Brillo</h5>
+                            <p class="mb-2"><span class="badge bg-success">Brillo</span></p>
+                            <p class="small mb-0">Pasión y velocidad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="brillo" data-application="completo" data-name="negro brillo">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #000000, #1a1a1a);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Negro Brillo</h5>
+                            <p class="mb-2"><span class="badge bg-success">Brillo</span></p>
+                            <p class="small mb-0">Lujo tradicional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="brillo" data-application="completo" data-name="blanco brillo">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #ffffff, #f8f9fa);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Blanco Brillo</h5>
+                            <p class="mb-2"><span class="badge bg-success">Brillo</span></p>
+                            <p class="small mb-0">Clásico atemporal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="brillo" data-application="completo" data-name="amarillo brillo">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #ffc107, #e0a800);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Amarillo Brillo</h5>
+                            <p class="mb-2"><span class="badge bg-success">Brillo</span></p>
+                            <p class="small mb-0">Energía pura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Satinado Colors -->
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="satinado" data-application="completo" data-name="plata satinado">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #adb5bd, #868e96);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Plata Satinado</h5>
+                            <p class="mb-2"><span class="badge bg-warning">Satinado</span></p>
+                            <p class="small mb-0">Elegancia moderna</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="satinado" data-application="completo" data-name="oro satinado">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Oro Satinado</h5>
+                            <p class="mb-2"><span class="badge bg-warning">Satinado</span></p>
+                            <p class="small mb-0">Lujo exclusivo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="satinado" data-application="completo" data-name="verde satinado">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #198754, #146c43);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Verde Satinado</h5>
+                            <p class="mb-2"><span class="badge bg-warning">Satinado</span></p>
+                            <p class="small mb-0">Naturaleza refinada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="satinado" data-application="completo" data-name="violeta satinado">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #6f42c1, #5a2d91);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Violeta Satinado</h5>
+                            <p class="mb-2"><span class="badge bg-warning">Satinado</span></p>
+                            <p class="small mb-0">Creatividad única</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Especiales -->
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="especial" data-application="detalles" data-name="fibra carbono">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(45deg, #2c2c2c 25%, #1a1a1a 25%, #1a1a1a 50%, #2c2c2c 50%, #2c2c2c 75%, #1a1a1a 75%); background-size: 20px 20px;"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Fibra de Carbono</h5>
+                            <p class="mb-2"><span class="badge bg-danger">Especial</span></p>
+                            <p class="small mb-0">Tecnología racing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="especial" data-application="detalles" data-name="cromado">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(135deg, #c0c0c0, #silver, #e6e6e6);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Cromado</h5>
+                            <p class="mb-2"><span class="badge bg-danger">Especial</span></p>
+                            <p class="small mb-0">Reflejo perfecto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="especial" data-application="parcial" data-name="camaleón">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Camaleón</h5>
+                            <p class="mb-2"><span class="badge bg-danger">Especial</span></p>
+                            <p class="small mb-0">Cambio de color</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 color-item" data-finish="especial" data-application="detalles" data-name="holográfico">
+                    <div class="color-card">
+                        <div class="color-sample" style="background: linear-gradient(45deg, #ff0080, #00ff80, #8000ff, #ff8000); background-size: 30px 30px;"></div>
+                        <div class="color-info p-3">
+                            <h5 class="fw-bold mb-2">Holográfico</h5>
+                            <p class="mb-2"><span class="badge bg-danger">Especial</span></p>
+                            <p class="small mb-0">Efecto futurista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="row" id="noResults" style="display: none;">
+                <div class="col-12 text-center py-5">
+                    <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                    <h4>No se encontraron colores</h4>
+                    <p class="text-muted">Intenta ajustar los filtros de búsqueda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark-secondary">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-3">¿No encuentras el color perfecto?</h2>
+            <p class="lead mb-4">Contáctanos para explorar opciones personalizadas</p>
+            <a href="contact.html" class="btn btn-primary btn-lg px-5 py-3">
+                <i class="fas fa-palette me-2"></i>Consultar Colores Personalizados
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-car me-2 text-primary"></i>Wrap Company ARG
+                    </h5>
+                    <p>Transformamos tu vehículo con la más alta calidad y profesionalismo. Tu auto, tu estilo, nuestra pasión.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <p><i class="fas fa-phone me-2 text-primary"></i> +54 11 1234-5678</p>
+                    <p><i class="fas fa-envelope me-2 text-primary"></i> info@wrapcompanyarg.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2 text-primary"></i> Buenos Aires, Argentina</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Wrap Company ARG. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- © Mauro – Wrap Company ARG -->

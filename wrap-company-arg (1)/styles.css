@@ -1,0 +1,451 @@
+:root {
+  --bg-color: #000000;
+  --text-color: #eeeeee;
+  --primary-blue: #0d6efd;
+  --secondary-bg: #1a1a1a;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  transition: all 0.3s ease;
+  background-color: transparent !important;
+  backdrop-filter: none;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(10px);
+  transform: translateY(0);
+  opacity: 1;
+  box-shadow: 0 2px 20px rgba(13, 110, 253, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-color) !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-blue) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(13, 110, 253, 0.3));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 1s ease 0.3s both;
+}
+
+.hero-content .btn {
+  animation: fadeInUp 1s ease 0.6s both;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+}
+
+/* Page Header */
+.page-header {
+  height: 40vh;
+  background: linear-gradient(135deg, var(--bg-color), var(--secondary-bg));
+  border-bottom: 3px solid var(--primary-blue);
+}
+
+/* Service Cards */
+.service-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.3);
+  border-color: var(--primary-blue);
+}
+
+.service-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.1);
+}
+
+.service-content {
+  background: var(--card-bg);
+}
+
+/* Gallery Styles */
+.gallery-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Color Cards */
+.color-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.color-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.2);
+}
+
+.color-sample {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.color-info {
+  background: var(--card-bg);
+}
+
+/* Contact Form */
+.contact-form-container {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  background: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.75rem 1rem;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  background: var(--secondary-bg);
+  border-color: var(--primary-blue);
+  color: var(--text-color);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.contact-form .form-label {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  height: fit-content;
+}
+
+.contact-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0b5ed7;
+  border-color: #0a58ca;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.4);
+}
+
+.btn-outline-primary {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: white;
+}
+
+/* Background Sections */
+.bg-dark-secondary {
+  background-color: var(--secondary-bg) !important;
+}
+
+.bg-black {
+  background-color: var(--bg-color) !important;
+}
+
+/* Social Links */
+.social-links a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-blue);
+}
+
+/* Map Container */
+.map-container {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Accordion */
+.accordion-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+  border-radius: 10px !important;
+}
+
+.accordion-button {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: none;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.accordion-body {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Carousel Customization */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--primary-blue);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* Form Validation */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+  border-color: #198754;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .display-3 {
+    font-size: 2rem;
+  }
+
+  .display-4 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form-container,
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+
+  .service-card {
+    margin-bottom: 2rem;
+  }
+
+  .gallery-card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content .btn {
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-form-container,
+  .contact-info {
+    padding: 1.5rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.loading {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.loading.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0b5ed7;
+}

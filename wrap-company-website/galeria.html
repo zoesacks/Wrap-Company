@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Wrap Company ARG</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-car-front me-2"></i>Wrap Company ARG
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colores.html">Colores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12 text-center">
+                    <h1 class="display-3 fw-bold mb-4">Galería de Proyectos</h1>
+                    <p class="lead fs-4 mb-5">Descubre nuestros trabajos más destacados y la calidad que nos caracteriza</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="py-4 bg-dark-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-buttons text-center">
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn active" data-filter="all">
+                            Todos
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ploteo">
+                            Ploteo/Wrapping
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ppf">
+                            PPF
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ceramico">
+                            Cerámico
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="polarizado">
+                            Polarizado
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="llantas">
+                            Llantas
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="galleryGrid">
+                <!-- Ploteo/Wrapping Projects -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ploteo">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="BMW M3 - Ploteo Mate Negro" data-description="Transformación completa con vinilo mate negro y detalles en azul eléctrico">
+                        <img src="/placeholder.svg?height=400&width=600" alt="BMW M3 Ploteo" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">BMW M3 - Ploteo Mate Negro</h5>
+                                <p class="mb-0">Vinilo mate con detalles azules</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-primary">Ploteo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ploteo">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Audi A4 - Wrapping Satinado" data-description="Ploteo completo en color gris satinado con acabado premium">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Audi A4 Wrapping" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Audi A4 - Wrapping Satinado</h5>
+                                <p class="mb-0">Gris satinado premium</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-primary">Ploteo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ploteo">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Mercedes-Benz C63 - Ploteo Corporativo" data-description="Diseño corporativo con gráficas personalizadas y logo empresarial">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Mercedes Ploteo Corporativo" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Mercedes-Benz C63 - Corporativo</h5>
+                                <p class="mb-0">Diseño empresarial personalizado</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-primary">Ploteo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PPF Projects -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ppf">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Porsche 911 - PPF Completo" data-description="Protección total transparente para mantener el color original">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Porsche PPF" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Porsche 911 - PPF Completo</h5>
+                                <p class="mb-0">Protección transparente total</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-success">PPF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ppf">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Tesla Model S - PPF Frontal" data-description="Protección de capot, paragolpes y ópticas delanteras">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Tesla PPF" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Tesla Model S - PPF Frontal</h5>
+                                <p class="mb-0">Protección zona de impacto</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-success">PPF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cerámico Projects -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ceramico">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Ferrari 488 - Tratamiento Cerámico" data-description="Protección cerámica de alta gama con 5 años de garantía">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Ferrari Cerámico" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Ferrari 488 - Cerámico Premium</h5>
+                                <p class="mb-0">Protección 5 años</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-warning">Cerámico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ceramico">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Lamborghini Huracán - Cerámico" data-description="Tratamiento cerámico con efecto hidrófogo extremo">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Lamborghini Cerámico" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Lamborghini Huracán</h5>
+                                <p class="mb-0">Efecto hidrófogo extremo</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-warning">Cerámico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Polarizado Projects -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="polarizado">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Range Rover - Polarizado Intermedio" data-description="Film polarizado 20% para máximo confort y privacidad">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Range Rover Polarizado" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Range Rover - Polarizado 20%</h5>
+                                <p class="mb-0">Confort y privacidad</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-info">Polarizado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="polarizado">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Ford Mustang - Polarizado Claro" data-description="Film polarizado 35% manteniendo excelente visibilidad">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Mustang Polarizado" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Ford Mustang - Polarizado 35%</h5>
+                                <p class="mb-0">Visibilidad óptima</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-info">Polarizado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Llantas Projects -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="llantas">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Chevrolet Camaro - Llantas Personalizadas" data-description="Pintura mate negra con calipers rojos de alto impacto">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Camaro Llantas" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">Chevrolet Camaro - Llantas</h5>
+                                <p class="mb-0">Mate negro con calipers rojos</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-danger">Llantas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="llantas">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Volkswagen Golf GTI - Llantas Azules" data-description="Pintura azul eléctrico combinando con detalles del vehículo">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Golf Llantas" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">VW Golf GTI - Llantas Azules</h5>
+                                <p class="mb-0">Azul eléctrico personalizado</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-danger">Llantas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mixed Projects -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="ploteo ceramico">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="/placeholder.svg?height=600&width=800" data-title="Proyecto Completo - McLaren 720S" data-description="Ploteo parcial + tratamiento cerámico + PPF en zonas críticas">
+                        <img src="/placeholder.svg?height=400&width=600" alt="McLaren Completo" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5 class="fw-bold">McLaren 720S - Completo</h5>
+                                <p class="mb-0">Ploteo + Cerámico + PPF</p>
+                                <div class="gallery-category">
+                                    <span class="badge bg-primary me-1">Ploteo</span>
+                                    <span class="badge bg-warning">Cerámico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="imageModalLabel">Título del Proyecto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="/placeholder.svg" alt="" class="img-fluid w-100" id="modalImage">
+                    <div class="p-4">
+                        <p class="text-light mb-0" id="modalDescription">Descripción del proyecto</p>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <a href="index.html#contacto" class="btn btn-primary">
+                        <i class="bi bi-calendar-check me-2"></i>Solicitar Presupuesto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold text-white mb-4">¿Te gustó algún proyecto?</h2>
+            <p class="lead text-white mb-4">Podemos crear algo similar o completamente personalizado para tu vehículo</p>
+            <a href="index.html#contacto" class="btn btn-light btn-lg px-5">
+                <i class="bi bi-chat-dots me-2"></i>Solicitar Presupuesto
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-car-front me-2"></i>Wrap Company ARG
+                    </h5>
+                    <p class="text-light-emphasis">
+                        Especialistas en transformación vehicular con más de 10 años de experiencia. 
+                        Tu auto, tu estilo, nuestra pasión.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Servicios</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="servicios.html#polarizado" class="text-light-emphasis text-decoration-none">Polarizado</a></li>
+                        <li><a href="servicios.html#ppf" class="text-light-emphasis text-decoration-none">PPF</a></li>
+                        <li><a href="servicios.html#pulido" class="text-light-emphasis text-decoration-none">Pulido</a></li>
+                        <li><a href="servicios.html#ceramico" class="text-light-emphasis text-decoration-none">Cerámico</a></li>
+                        <li><a href="servicios.html#ploteo" class="text-light-emphasis text-decoration-none">Ploteo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="galeria.html" class="text-light-emphasis text-decoration-none">Galería</a></li>
+                        <li><a href="colores.html" class="text-light-emphasis text-decoration-none">Colores</a></li>
+                        <li><a href="index.html#contacto" class="text-light-emphasis text-decoration-none">Contacto</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Términos</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+                    <div class="contact-info">
+                        <p class="text-light-emphasis mb-2">
+                            <i class="bi bi-geo-alt me-2"></i>Av. Corrientes 1234, CABA
+                        </p>
+                        <p class="text-light-emphasis mb-2">
+                            <i class="bi bi-telephone me-2"></i>+54 11 1234-5678
+                        </p>
+                        <p class="text-light-emphasis mb-2">
+                            <i class="bi bi-envelope me-2"></i>info@wrapcompanyarg.com
+                        </p>
+                        <p class="text-light-emphasis">
+                            <i class="bi bi-clock me-2"></i>Lun-Vie: 9:00-18:00 | Sáb: 9:00-13:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light-emphasis mb-0">
+                        &copy; 2024 Wrap Company ARG. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light-emphasis mb-0">
+                        Diseñado con <i class="bi bi-heart-fill text-danger"></i> en Argentina
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+    
+    <style>
+        .gallery-hero {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 123, 255, 0.4)),
+                        url('/placeholder.svg?height=600&width=1920') center/cover no-repeat;
+            padding-top: 80px;
+        }
+        
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            background: var(--background-dark-subtle);
+        }
+        
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-card img {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .gallery-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+            color: white;
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-card:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-category {
+            margin-top: 1rem;
+        }
+        
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .gallery-item {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        
+        .gallery-item.hidden {
+            opacity: 0;
+            transform: scale(0.8);
+            pointer-events: none;
+        }
+    </style>
+</body>
+</html>
+
+<!-- Crédito: Mauro – Wrap Company ARG -->

@@ -66,122 +66,144 @@
     </section>
 
     <!-- Servicios Section -->
-    <section id="servicios" class="py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="display-4 fw-bold mb-3">Nuestros Servicios</h2>
-                    <p class="lead text-secondary">Transformamos tu vehículo con la más alta calidad</p>
+<section id="servicios" class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="display-4 fw-bold mb-3">Nuestros Servicios</h2>
+                <p class="lead text-secondary">Transformamos tu vehículo con la más alta calidad</p>
+            </div>
+        </div>
+        
+        <div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">POLARIZADO</h4>
+                                <p class="text-secondary mb-3">Protección y confort</p>
+                                <p class="small mb-4">Reducción de temperatura y protección UV con films de distintas tonalidades para mantener claridad y privacidad.</p>
+                                <a href="servicios.html#polarizado" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-car-front"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">PPF (Paint Protection Film)</h4>
+                                <p class="text-secondary mb-3">Protección total de pintura</p>
+                                <p class="small mb-4">Previene rayones, daños de pintura y decoloración. Aplicable en auto completo o por partes específicas.</p>
+                                <a href="servicios.html#ppf" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">PULIDO DE PINTURA</h4>
+                                <p class="text-secondary mb-3">Restauración profesional</p>
+                                <p class="small mb-4">Proceso de 3 pasos: descontaminación, pulido abrasivo y abrillantado final para un acabado perfecto.</p>
+                                <a href="servicios.html#pulido" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-droplet"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">TRATAMIENTO CERÁMICO</h4>
+                                <p class="text-secondary mb-3">Protección de larga duración</p>
+                                <p class="small mb-4">Cuarzo líquido con nanopartículas que crea una capa protectora hidrófoba y resistente.</p>
+                                <a href="servicios.html#ceramico" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-shield-fill-check"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">ANTIVANDÁLICOS</h4>
+                                <p class="text-secondary mb-3">Seguridad y protección</p>
+                                <p class="small mb-4">Films que evitan la rotura de vidrios y mantienen unidas las esquirlas con excelente visión.</p>
+                                <a href="servicios.html#antivandalicos" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-brush"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">LIMPIEZA FULL INTERIOR</h4>
+                                <p class="text-secondary mb-3">Desinfección profunda</p>
+                                <p class="small mb-4">Limpieza completa de techo, tapizados, alfombras y todos los componentes interiores.</p>
+                                <a href="servicios.html#limpieza" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-palette"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">PLOTEO VEHICULAR / WRAPPING</h4>
+                                <p class="text-secondary mb-3">Personalización total</p>
+                                <p class="small mb-4">Materiales importados en variedad de colores y acabados. Forrado completo o parcial.</p>
+                                <a href="servicios.html#ploteo" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="bi bi-circle"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3">PINTURA DE LLANTAS</h4>
+                                <p class="text-secondary mb-3">Estilo personalizado</p>
+                                <p class="small mb-4">Pintura profesional de llantas y calipers en diversos colores y acabados.</p>
+                                <a href="servicios.html#llantas" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="row g-4">
-                <!-- Polarizado -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-shield-check"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">POLARIZADO</h4>
-                        <p class="text-secondary mb-3">Protección y confort</p>
-                        <p class="small mb-4">Reducción de temperatura y protección UV con films de distintas tonalidades para mantener claridad y privacidad.</p>
-                        <a href="servicios.html#polarizado" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-
-                <!-- PPF -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-car-front"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">PPF (Paint Protection Film)</h4>
-                        <p class="text-secondary mb-3">Protección total de pintura</p>
-                        <p class="small mb-4">Previene rayones, daños de pintura y decoloración. Aplicable en auto completo o por partes específicas.</p>
-                        <a href="servicios.html#ppf" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-
-                <!-- Pulido -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-stars"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">PULIDO DE PINTURA</h4>
-                        <p class="text-secondary mb-3">Restauración profesional</p>
-                        <p class="small mb-4">Proceso de 3 pasos: descontaminación, pulido abrasivo y abrillantado final para un acabado perfecto.</p>
-                        <a href="servicios.html#pulido" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-
-                <!-- Cerámico -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-droplet"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">TRATAMIENTO CERÁMICO</h4>
-                        <p class="text-secondary mb-3">Protección de larga duración</p>
-                        <p class="small mb-4">Cuarzo líquido con nanopartículas que crea una capa protectora hidrófoba y resistente.</p>
-                        <a href="servicios.html#ceramico" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-
-                <!-- Antivandálicos -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-shield-fill-check"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">ANTIVANDÁLICOS</h4>
-                        <p class="text-secondary mb-3">Seguridad y protección</p>
-                        <p class="small mb-4">Films que evitan la rotura de vidrios y mantienen unidas las esquirlas con excelente visión.</p>
-                        <a href="servicios.html#antivandalicos" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-
-                <!-- Limpieza -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-brush"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">LIMPIEZA FULL INTERIOR</h4>
-                        <p class="text-secondary mb-3">Desinfección profunda</p>
-                        <p class="small mb-4">Limpieza completa de techo, tapizados, alfombras y todos los componentes interiores.</p>
-                        <a href="servicios.html#limpieza" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-
-                <!-- Ploteo -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-palette"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">PLOTEO VEHICULAR / WRAPPING</h4>
-                        <p class="text-secondary mb-3">Personalización total</p>
-                        <p class="small mb-4">Materiales importados en variedad de colores y acabados. Forrado completo o parcial.</p>
-                        <a href="servicios.html#ploteo" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-
-                <!-- Pintura de Llantas -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="bi bi-circle"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">PINTURA DE LLANTAS</h4>
-                        <p class="text-secondary mb-3">Estilo personalizado</p>
-                        <p class="small mb-4">Pintura profesional de llantas y calipers en diversos colores y acabados.</p>
-                        <a href="servicios.html#llantas" class="btn btn-outline-primary">Ver más</a>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Trabajos Destacados -->
     <section id="trabajos" class="py-5 bg-dark-subtle">
@@ -206,7 +228,7 @@
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="Ploteo completo BMW" class="img-fluid rounded">
+                                    <img src="img/ploteobmw.jpeg" alt="Ploteo completo BMW" class="img-fluid rounded">
                                     <div class="trabajo-overlay">
                                         <h5>Ploteo Completo BMW</h5>
                                         <p>Vinilo mate negro con detalles azules</p>
@@ -215,7 +237,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="PPF Mercedes" class="img-fluid rounded">
+                                    <img src="img/MercedesBenz.jpeg" alt="PPF Mercedes" class="img-fluid rounded">
                                     <div class="trabajo-overlay">
                                         <h5>PPF Mercedes-Benz</h5>
                                         <p>Protección completa transparente</p>
@@ -229,7 +251,7 @@
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="Tratamiento cerámico Audi" class="img-fluid rounded">
+                                    <img src="img/audi.jpeg" alt="Tratamiento cerámico Audi" class="img-fluid rounded">
                                     <div class="trabajo-overlay">
                                         <h5>Tratamiento Cerámico Audi</h5>
                                         <p>Protección y brillo duradero</p>
@@ -238,7 +260,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="Polarizado Ford" class="img-fluid rounded">
+                                    <img src="img/mustang.jpeg" alt="Polarizado Ford" class="img-fluid rounded">
                                     <div class="trabajo-overlay">
                                         <h5>Polarizado Ford Mustang</h5>
                                         <p>Film intermedio 20%</p>
@@ -248,51 +270,9 @@
                         </div>
                     </div>
                     
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="Wrapping Chevrolet" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>Wrapping Chevrolet Camaro</h5>
-                                        <p>Vinilo satinado rojo</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="Llantas personalizadas" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>Llantas Personalizadas</h5>
-                                        <p>Pintura mate con calipers azules</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
                     
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="Ploteo corporativo" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>Ploteo Corporativo</h5>
-                                        <p>Diseño empresarial completo</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="/placeholder.svg?height=300&width=500" alt="Antivandálicos" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>Film Antivandálico</h5>
-                                        <p>Protección transparente 35%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    
                 </div>
                 
                 <button class="carousel-control-prev" type="button" data-bs-target="#trabajosCarousel" data-bs-slide="prev">

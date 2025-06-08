@@ -66,7 +66,7 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
 })
 
 // Initialize carousel with custom settings
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector("#trabajosCarousel")
   if (carousel) {
     const bsCarousel = new bootstrap.Carousel(carousel, {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       touch: true,
     })
   }
-})
+})*/
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -123,6 +123,30 @@ function preloadImages() {
     img.src = url
   })
 }
+
+// Inicializar todos los carruseles
+function initCarousels() {
+  // Inicializar carrusel de servicios
+  const serviciosCarousel = document.getElementById("serviciosCarousel")
+  if (serviciosCarousel) {
+    new bootstrap.Carousel(serviciosCarousel, {
+      interval: 5000,
+      touch: true,
+    })
+  }
+
+  // Inicializar carrusel de trabajos destacados
+  const trabajosCarousel = document.getElementById("trabajosCarousel")
+  if (trabajosCarousel) {
+    new bootstrap.Carousel(trabajosCarousel, {
+      interval: 4000,
+      touch: true,
+    })
+  }
+}
+
+// Llamar a la función cuando el DOM esté cargado
+document.addEventListener("DOMContentLoaded", initCarousels)
 
 // Initialize preloading
 document.addEventListener("DOMContentLoaded", preloadImages)

@@ -3,499 +3,436 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wrap Company ARG - Tu auto. Tu estilo. Nuestra pasión.</title>
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
+    <title>𝙒𝙧𝙖𝙥 𝘾𝙤𝙢𝙥𝙖𝙣𝙮 𝘼𝙧𝙜 - Ploteo y Detailing Automotor</title>
+    <meta name="description" content="Especialistas en ploteo automotor, detailing y polarizado profesional en Argentina. Transformamos tu auto en una obra de arte.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">
-                <i class="bi bi-car-front me-2"></i>Wrap Company ARG
-            </a>
+<body class="dark-theme">
+    <!-- Header -->
+   <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="logo-text">𝙒𝙧𝙖𝙥 𝘾𝙤𝙢𝙥𝙖𝙣𝙮 𝘼𝙧𝙜</a>
+            </div>
             
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Inicio</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
+                    <li class="nav__item">
+                        <a href="pages/servicios.html" class="nav__link">Servicios</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#trabajos">Trabajos</a>
+                    <li class="nav__item">
+                        <a href="pages/galeria.html" class="nav__link">Galería</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
+                    <li class="nav__item">
+                        <a href="pages/catalogo.html" class="nav__link">Catálogo</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="colores.html">Colores</a>
+                    <li class="nav__item">
+                        <a href="pages/nostros.html" class="nav__link">Sobre Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                    <li class="nav__item">
+                        <a href="pages/contacto.html" class="nav__link nav__link--active">Contacto</a>
                     </li>
                 </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="close-icon">✕</i>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="container text-center text-white">
-                <h1 class="display-2 fw-bold mb-4 animate-fade-up">Wrap Company ARG</h1>
-                <p class="lead fs-3 mb-5 animate-fade-up-delay">Tu auto. Tu estilo. Nuestra pasión.</p>
-                <a href="#contacto" class="btn btn-primary btn-lg px-5 py-3 animate-fade-up-delay-2">
-                    <i class="bi bi-calendar-check me-2"></i>Reserva tu turno
-                </a>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- Servicios Section -->
-<section id="servicios" class="py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h2 class="display-4 fw-bold mb-3">Nuestros Servicios</h2>
-                <p class="lead text-secondary">Transformamos tu vehículo con la más alta calidad</p>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <div class="hero__overlay"></div>
+            </div>
+            
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-main">𝙒𝙧𝙖𝙥 𝘾𝙤𝙢𝙥𝙖𝙣𝙮 𝘼𝙧𝙜</span>
+                    </h1>
+                    <p class="hero__subtitle">Transformamos tu auto en una obra de arte</p>
+                    <a href="#services" class="hero__cta btn btn--primary">Conocé más</a>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <span class="hero__scroll-text">Scroll</span>
+                <div class="hero__scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nuestros Servicios</h2>
+                    <p class="section__subtitle">Especialistas en transformación automotriz</p>
+                </div>
+                
+                <div class="services__grid">
+                    <div class="service__card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service__icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Ploteo y Wrapping</h3>
+                        <p class="service__description">Cambio completo de color y diseños personalizados con materiales premium de alta durabilidad.</p>
+                        <button class="service__btn btn btn--outline" data-service="ploteo">Ver más</button>
+                        
+                        <div class="service__details" id="ploteo-details">
+                            <ul class="service__features">
+                                <li>Materiales 3M y Avery Dennison</li>
+                                <li>Garantía de 1 año</li>
+                                <li>Diseños personalizados</li>
+                                <li>Protección UV</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service__card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service__icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service__title"> Car Detailing</h3>
+                        <p class="service__description">Limpieza profunda interior y exterior que devuelve el brillo original a tu vehículo.</p>
+                        <button class="service__btn btn btn--outline" data-service="detailing">Ver más</button>
+                        
+                        <div class="service__details" id="detailing-details">
+                            <ul class="service__features">
+                                <li>Lavado y encerado premium</li>
+                                <li>Limpieza de tapizados</li>
+                                <li>Pulido de faros</li>
+                                <li>Tratamiento de cuero</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service__card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service__icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="9" cy="9" r="2"/>
+                                <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Polarizado Profesional</h3>
+                        <p class="service__description">Instalación de láminas de alta calidad para protección UV y privacidad total.</p>
+                        <button class="service__btn btn btn--outline" data-service="polarizado">Ver más</button>
+                        
+                        <div class="service__details" id="polarizado-details">
+                            <ul class="service__features">
+                                <li>Láminas 3M Crystalline</li>
+                                <li>Protección UV 99%</li>
+                                <li>Reducción de calor 60%</li>
+                                <li>Garantía por 5 años </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <body>
+  <!-- Sección de trabajos con carrusel -->
+  <section class="work-gallery-section">
+    <div class="work-container">
+      <div class="work-header">
+        <h2 class="work-title">Nuestros trabajos</h2>
+        <p class="work-subtitle">Algunos de nuestros proyectos más destacados</p>
+      </div>
+      
+      <div class="work-carousel-container">
+        <div class="work-carousel" id="work-carousel">
+          <div class="work-slide">
+            <div class="work-item">
+              <img src="img/onix.jpg" alt="Ploteo completo ONIX" class="work-img">
+              <div class="work-overlay">
+                <h4 class="work-overlay-title">Ploteo Completo</h4>
+                <p class="work-overlay-category">CHEVROLET ONIX</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-slide">
+            <div class="work-item">
+              <img src="img/corola.jpg" alt="TOYOTA COROLLA" class="work-img">
+              <div class="work-overlay">
+                <h4 class="work-overlay-title">Tratamiento acrílico + protección 12 meses</h4>
+                <p class="work-overlay-category">TOYOTA COROLLA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-slide">
+            <div class="work-item">
+              <img src="img/cross.jpg" alt="COROLLA CROSS" class="work-img">
+              <div class="work-overlay">
+                <h4 class="work-overlay-title">Detailing + encerado</h4>
+                <p class="work-overlay-category">COROLLA CROSS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-slide">
+            <div class="work-item">
+              <img src="img/golf.jpg" alt="VOLKSWAGEN GOLF" class="work-img">
+              <div class="work-overlay">
+                <h4 class="work-overlay-title">Ploteo completo</h4>
+                <p class="work-overlay-category">VOLKSWAGEN GOLF MK4</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-slide">
+            <div class="work-item">
+              <img src="img/mustang.jpg" alt="FORD MUSTANG" class="work-img">
+              <div class="work-overlay">
+                <h4 class="work-overlay-title">Detailing + encerado</h4>
+                <p class="work-overlay-category">FORD MUSTANG</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-slide">
+            <div class="work-item">
+              <img src="img/f150.jpg" alt="FORD F150" class="work-img">
+              <div class="work-overlay">
+                <h4 class="work-overlay-title">Protección cerámica</h4>
+                <p class="work-overlay-category">FORD F150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-slide">
+            <div class="work-item">
+              <img src="img/RAMPAGE.jpg" alt="DODGE RAMPAGE" class="work-img">
+              <div class="work-overlay">
+                <h4 class="work-overlay-title">Polarizado antibandalismo</h4>
+                <p class="work-overlay-category">DODGE RAMPAGE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="work-nav work-prev" id="work-prev">❮</button>
+        <button class="work-nav work-next" id="work-next">❯</button>
+
+        <!-- Indicadores -->
+        <div class="work-indicators" id="work-indicators"></div>
+      </div>
+    </div>
+  </section>
+
+       
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">𝙒𝙧𝙖𝙥 𝘾𝙤𝙢𝙥𝙖𝙣𝙮 𝘼𝙧𝙜</h3>
+                    <p class="footer__tagline">Transformamos tu auto en una obra de arte</p>
+                    <p class="footer__description">
+                        Especialistas en Car Wrapping, detailing profesional y polarizado premium. 
+                        Más de 5 años transformando vehículos con los mejores materiales del mercado.
+                    </p>
+                    
+                    <div class="footer__social">
+                        <h4 class="footer__social-title">Seguinos en redes</h4>
+                        <div class="footer__social-links">
+                            <a href="https://www.instagram.com/wrapcompany.arg/" class="footer__social-link instagram" target="_blank" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                <span>@wrapcompanyarg</span>
+                            </a>
+                            
+                            <a href="https://wa.me/5491162601611" class="footer__social-link whatsapp" target="_blank" aria-label="WhatsApp">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.686"/>
+                                </svg>
+                                <span>+54 9 11 6260-1611</span>
+                            </a>
+                            
+                            <a href="https://web.facebook.com/profile.php?id=100087758164724&locale=es_LA" class="footer__social-link facebook" target="_blank" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                                <span>Wrap Company Arg</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer__info">
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">
+                            <span class="footer__icon">📍</span>
+                            Ubicación
+                        </h4>
+                        <div class="footer__content">
+                            <p class="footer__address">Av. SARGENTO CAYETANO BELIERA 4957 </p>
+                            <p class="footer__address">Pilar, Buenos Aires</p>
+                            <p class="footer__address">B1669</p>
+                            <a href="https://www.google.com/maps/place/Wrap+Company+Arg/@-34.4529929,-58.8278513,20.43z/data=!4m6!3m5!1s0x95bc83a10e14391d:0x123d65c78093073c!8m2!3d-34.4529621!4d-58.8280128!16s%2Fg%2F11kn13zmzy?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" class="footer__map-link" target="_blank">
+                                Ver en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">
+                            <span class="footer__icon">🕒</span>
+                            Horarios de Atención
+                        </h4>
+                        <div class="footer__content">
+                            <div class="footer__schedule-item">
+                                <span class="footer__day">Lunes a Viernes</span>
+                                <span class="footer__time">9:00 - 18:00</span>
+                            </div>
+                            <div class="footer__schedule-item">
+                                <span class="footer__day">Sábados</span>
+                                <span class="footer__time">9:00 - 14:00</span>
+                            </div>
+                            <div class="footer__schedule-item footer__schedule-item--closed">
+                                <span class="footer__day">Domingos</span>
+                                <span class="footer__time">Cerrado</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">
+                            <span class="footer__icon">📞</span>
+                            Contacto Directo
+                        </h4>
+                        <div class="footer__content">
+                            <a href="tel:+5491123456789" class="footer__contact-link">
+                                <span class="footer__contact-icon">📱</span>
+                                <div class="footer__contact-info">
+                                    <span class="footer__contact-label">Teléfono</span>
+                                    <span class="footer__contact-value">+54 9 11 6260-1611</span>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:info@wrapcompanyarg.com" class="footer__contact-link">
+                                <span class="footer__contact-icon">📧</span>
+                                <div class="footer__contact-info">
+                                    <span class="footer__contact-label">Email</span>
+                                    <span class="footer__contact-value">wrapcompany.arg@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enhanced Newsletter Section -->
+            <div class="footer__newsletter">
+                <div class="footer__newsletter-content">
+                    <h4 class="footer__newsletter-title">🎨 Mantente al día con nuestros trabajos</h4>
+                    <p class="footer__newsletter-text">Suscribite para recibir ofertas exclusivas y ver nuestros últimos proyectos</p>
+                </div>
+                <form class="footer__newsletter-form" id="newsletter-form">
+                    <div class="footer__newsletter-input-group">
+                        <input 
+                            type="email" 
+                            class="footer__newsletter-input" 
+                            placeholder="Tu email aquí..."
+                            required
+                            aria-label="Email para newsletter"
+                        >
+                        <button type="submit" class="footer__newsletter-btn">
+                            <span class="footer__newsletter-btn-text">Suscribirse</span>
+                            <span class="footer__newsletter-btn-icon">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <p class="footer__copyright">
+                        © 2024 <strong>Wrap Company Arg</strong>. Todos los derechos reservados.
+                    </p>
+                    <div class="footer__legal">
+                        <a href="#" class="footer__legal-link">Términos y Condiciones</a>
+                        <span class="footer__legal-separator">•</span>
+                        <a href="#" class="footer__legal-link">Política de Privacidad</a>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom-right">
+                    <p class="footer__credits">
+                        Desarrollado con 💙 por 
+                        <a href="#" class="footer__credits-link" target="_blank">
+                            <strong>SacksVerse</strong>
+                        </a>
+                    </p>
+                    <p class="footer__creator">Creado por <strong>Mauro Benjamín</strong></p>
+                </div>
             </div>
         </div>
         
-        <div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="2"></button>
-            </div>
-            
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-shield-check"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">POLARIZADO</h4>
-                                <p class="text-secondary mb-3">Protección y confort</p>
-                                <p class="small mb-4">Reducción de temperatura y protección UV con films de distintas tonalidades para mantener claridad y privacidad.</p>
-                                <a href="servicios.html#polarizado" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-car-front"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">PPF (Paint Protection Film)</h4>
-                                <p class="text-secondary mb-3">Protección total de pintura</p>
-                                <p class="small mb-4">Previene rayones, daños de pintura y decoloración. Aplicable en auto completo o por partes específicas.</p>
-                                <a href="servicios.html#ppf" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-stars"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">PULIDO DE PINTURA</h4>
-                                <p class="text-secondary mb-3">Restauración profesional</p>
-                                <p class="small mb-4">Proceso de 3 pasos: descontaminación, pulido abrasivo y abrillantado final para un acabado perfecto.</p>
-                                <a href="servicios.html#pulido" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-droplet"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">TRATAMIENTO CERÁMICO</h4>
-                                <p class="text-secondary mb-3">Protección de larga duración</p>
-                                <p class="small mb-4">Cuarzo líquido con nanopartículas que crea una capa protectora hidrófoba y resistente.</p>
-                                <a href="servicios.html#ceramico" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-shield-fill-check"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">ANTIVANDÁLICOS</h4>
-                                <p class="text-secondary mb-3">Seguridad y protección</p>
-                                <p class="small mb-4">Films que evitan la rotura de vidrios y mantienen unidas las esquirlas con excelente visión.</p>
-                                <a href="servicios.html#antivandalicos" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-brush"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">LIMPIEZA FULL INTERIOR</h4>
-                                <p class="text-secondary mb-3">Desinfección profunda</p>
-                                <p class="small mb-4">Limpieza completa de techo, tapizados, alfombras y todos los componentes interiores.</p>
-                                <a href="servicios.html#limpieza" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-palette"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">PLOTEO VEHICULAR / WRAPPING</h4>
-                                <p class="text-secondary mb-3">Personalización total</p>
-                                <p class="small mb-4">Materiales importados en variedad de colores y acabados. Forrado completo o parcial.</p>
-                                <a href="servicios.html#ploteo" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card h-100">
-                                <div class="service-icon">
-                                    <i class="bi bi-circle"></i>
-                                </div>
-                                <h4 class="fw-bold mb-3">PINTURA DE LLANTAS</h4>
-                                <p class="text-secondary mb-3">Estilo personalizado</p>
-                                <p class="small mb-4">Pintura profesional de llantas y calipers en diversos colores y acabados.</p>
-                                <a href="servicios.html#llantas" class="btn btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-    </div>
-</section>
-
-    <!-- Trabajos Destacados -->
-    <section id="trabajos" class="py-5 bg-dark-subtle">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="display-4 fw-bold mb-3">Trabajos Destacados</h2>
-                    <p class="lead text-secondary">Algunos de nuestros proyectos más recientes</p>
-                </div>
-            </div>
-            
-            <div id="trabajosCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="3"></button>
-                </div>
-                
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="img/ploteobmw.jpeg" alt="Ploteo completo BMW" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>Ploteo Completo BMW</h5>
-                                        <p>Vinilo mate negro con detalles azules</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="img/MercedesBenz.jpeg" alt="PPF Mercedes" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>PPF Mercedes-Benz</h5>
-                                        <p>Protección completa transparente</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="img/audi.jpeg" alt="Tratamiento cerámico Audi" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>Tratamiento Cerámico Audi</h5>
-                                        <p>Protección y brillo duradero</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="trabajo-card">
-                                    <img src="img/mustang.jpeg" alt="Polarizado Ford" class="img-fluid rounded">
-                                    <div class="trabajo-overlay">
-                                        <h5>Polarizado Ford Mustang</h5>
-                                        <p>Film intermedio 20%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                  
-                    
-    
-                </div>
-                
-                <button class="carousel-control-prev" type="button" data-bs-target="#trabajosCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#trabajosCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+        <!-- Enhanced Decorative Elements -->
+        <div class="footer__decoration">
+            <div class="footer__decoration-line"></div>
+            <div class="footer__decoration-dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </section>
-
-    <!-- Ubicación -->
-    <section id="ubicacion" class="py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="display-4 fw-bold mb-3">Nuestra Ubicación</h2>
-                    <p class="lead text-secondary">Visitanos en nuestro taller especializado</p>
-                </div>
-            </div>
-            
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-6">
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168903552!2d-58.3815591!3d-34.6037181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjInNTMuNiJX!5e0!3m2!1ses!2sar!4v1234567890"
-                            width="100%" 
-                            height="400" 
-                            style="border:0; border-radius: 10px;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <h4 class="fw-bold mb-4">Información de Contacto</h4>
-                        <div class="contact-item mb-3">
-                            <i class="bi bi-geo-alt-fill text-primary me-3"></i>
-                            <div>
-                                <strong>Dirección:</strong><br>
-                                Av. Corrientes 1234, CABA<br>
-                                Buenos Aires, Argentina
-                            </div>
-                        </div>
-                        <div class="contact-item mb-3">
-                            <i class="bi bi-telephone-fill text-primary me-3"></i>
-                            <div>
-                                <strong>Teléfono:</strong><br>
-                                +54 11 1234-5678
-                            </div>
-                        </div>
-                        <div class="contact-item mb-3">
-                            <i class="bi bi-envelope-fill text-primary me-3"></i>
-                            <div>
-                                <strong>Email:</strong><br>
-                                info@wrapcompanyarg.com
-                            </div>
-                        </div>
-                        <div class="contact-item mb-4">
-                            <i class="bi bi-clock-fill text-primary me-3"></i>
-                            <div>
-                                <strong>Horarios:</strong><br>
-                                Lun - Vie: 9:00 - 18:00<br>
-                                Sáb: 9:00 - 13:00
-                            </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="btn btn-outline-primary me-2">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                            <a href="#" class="btn btn-outline-primary me-2">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a href="#" class="btn btn-outline-primary">
-                                <i class="bi bi-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="py-5 bg-dark-subtle">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="display-4 fw-bold mb-3">Reserva tu Turno</h2>
-                    <p class="lead text-secondary">Contáctanos para transformar tu vehículo</p>
-                </div>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form id="contactForm" class="contact-form">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="nombre" class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" id="nombre" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control" id="telefono" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="servicio" class="form-label">Servicio de interés</label>
-                                <select class="form-select" id="servicio" required>
-                                    <option value="">Selecciona un servicio</option>
-                                    <option value="polarizado">Polarizado</option>
-                                    <option value="ppf">PPF (Paint Protection Film)</option>
-                                    <option value="pulido">Pulido de Pintura</option>
-                                    <option value="ceramico">Tratamiento Cerámico</option>
-                                    <option value="antivandalicos">Antivandálicos</option>
-                                    <option value="limpieza">Limpieza Full Interior</option>
-                                    <option value="ploteo">Ploteo Vehicular / Wrapping</option>
-                                    <option value="llantas">Pintura de Llantas</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="mensaje" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Cuéntanos sobre tu vehículo y qué servicio necesitas..."></textarea>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg px-5">
-                                    <i class="bi bi-send me-2"></i>Enviar Consulta
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="bi bi-car-front me-2"></i>Wrap Company ARG
-                    </h5>
-                    <p class="text-light-emphasis">
-                        Especialistas en transformación vehicular con más de 10 años de experiencia. 
-                        Tu auto, tu estilo, nuestra pasión.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-light me-3"><i class="bi bi-whatsapp fs-4"></i></a>
-                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-6">
-                    <h6 class="fw-bold mb-3">Servicios</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="servicios.html#polarizado" class="text-light-emphasis text-decoration-none">Polarizado</a></li>
-                        <li><a href="servicios.html#ppf" class="text-light-emphasis text-decoration-none">PPF</a></li>
-                        <li><a href="servicios.html#pulido" class="text-light-emphasis text-decoration-none">Pulido</a></li>
-                        <li><a href="servicios.html#ceramico" class="text-light-emphasis text-decoration-none">Cerámico</a></li>
-                        <li><a href="servicios.html#ploteo" class="text-light-emphasis text-decoration-none">Ploteo</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2 col-md-6">
-                    <h6 class="fw-bold mb-3">Enlaces</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="galeria.html" class="text-light-emphasis text-decoration-none">Galería</a></li>
-                        <li><a href="colores.html" class="text-light-emphasis text-decoration-none">Colores</a></li>
-                        <li><a href="#contacto" class="text-light-emphasis text-decoration-none">Contacto</a></li>
-                        <li><a href="#" class="text-light-emphasis text-decoration-none">Términos</a></li>
-                        <li><a href="#" class="text-light-emphasis text-decoration-none">Privacidad</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h6 class="fw-bold mb-3">Contacto</h6>
-                    <div class="contact-info">
-                        <p class="text-light-emphasis mb-2">
-                            <i class="bi bi-geo-alt me-2"></i>Av. Corrientes 1234, CABA
-                        </p>
-                        <p class="text-light-emphasis mb-2">
-                            <i class="bi bi-telephone me-2"></i>+54 11 1234-5678
-                        </p>
-                        <p class="text-light-emphasis mb-2">
-                            <i class="bi bi-envelope me-2"></i>info@wrapcompanyarg.com
-                        </p>
-                        <p class="text-light-emphasis">
-                            <i class="bi bi-clock me-2"></i>Lun-Vie: 9:00-18:00 | Sáb: 9:00-13:00
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="my-4">
-            
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="text-light-emphasis mb-0">
-                        &copy; 2024 Wrap Company ARG. Todos los derechos reservados.
-                    </p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="text-light-emphasis mb-0">
-                        Diseñado con <i class="bi bi-heart-fill text-danger"></i> en Argentina
-                    </p>
-                </div>
-            </div>
+        
+        <!-- Floating Elements -->
+        <div class="footer__floating-elements">
+            <div class="footer__floating-element footer__floating-element--1"></div>
+            <div class="footer__floating-element footer__floating-element--2"></div>
+            <div class="footer__floating-element footer__floating-element--3"></div>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5491123456789" class="whatsapp-float" target="_blank">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.686"/>
+        </svg>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-<!-- Crédito: Mauro – Wrap Company ARG -->
